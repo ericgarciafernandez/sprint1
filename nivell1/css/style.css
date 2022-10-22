@@ -1,0 +1,101 @@
+body {
+    max-width: 1200px;
+}
+
+body div {
+    background-color: black;
+    margin: 2%
+}
+
+.firstContainer,
+.secondContainer,
+.thirdContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstBlock {
+    display: flex;
+}
+
+.firstContainer .firstBlock .content:first-child {
+    width: 20%;
+}
+
+.firstContainer .firstBlock .content:nth-child(2) {
+    width: 80%;
+}
+
+.firstContainer .firstBlock .content:last-child {
+    width: 20%;
+}
+
+.secondContainer {
+    flex-direction: row;
+}
+
+.secondContainer .firstBlock {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.secondContainer .firstBlock {
+    width: 60%;
+}
+
+.secondContainer .firstBlock .content {
+    width: 46%;
+}
+
+.secondContainer .firstBlock .content:last-child {
+    width: 100%;
+}
+
+.secondContainer .secondBlock {
+    width: 40%;
+}
+
+.content {
+    height: 20px;
+}
+
+/* Colors */
+.firstContainer .firstBlock {
+    background-color: #2D4059;
+}
+
+.firstContainer .secondBlock {
+    background-color: #F07B3F;
+}
+
+.secondContainer .firstBlock {
+    background-color: #4E4E6A;
+}
+
+.secondContainer .secondBlock {
+    background-color: #F73F52;
+}
+
+.thirdContainer .content {
+    background-color: #E6AF2E;
+}
+
+.firstContainer .firstBlock .content {
+    background-color: #EA5455;
+}
+
+.firstContainer .secondBlock .content {
+    background-color: #FED460;
+}
+
+.secondContainer .firstBlock .content {
+    background-color: #1F6CB0;
+}
+
+.secondContainer .firstBlock .content:last-child {
+    background-color: #70A3C4;
+}
+
+.secondContainer .secondBlock .content {
+    background-color: #FEEA85;
+}
