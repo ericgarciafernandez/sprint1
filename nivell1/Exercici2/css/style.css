@@ -8,7 +8,6 @@ body div {
 }
 
 .firstContainer,
-.secondContainer,
 .thirdContainer {
     display: flex;
     flex-direction: column;
@@ -31,6 +30,7 @@ body div {
 }
 
 .secondContainer {
+    display: flex;
     flex-direction: row;
 }
 
@@ -98,4 +98,18 @@ body div {
 
 .secondContainer .secondBlock .content {
     background-color: #FEEA85;
+}
+
+/* Tablets (600px - 768px) */
+
+@media (max-width:768px) {
+    .secondContainer {
+        background-color: #FEFF03;
+        flex-wrap: wrap;
+    }
+
+    .secondContainer .firstBlock,
+    .secondContainer .secondBlock {
+        width: 100%;
+    }
 }

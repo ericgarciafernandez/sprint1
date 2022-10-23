@@ -8,7 +8,6 @@ body div {
 }
 
 .firstContainer,
-.secondContainer,
 .thirdContainer {
     display: flex;
     flex-direction: column;
@@ -31,6 +30,7 @@ body div {
 }
 
 .secondContainer {
+    display: flex;
     flex-direction: row;
 }
 
@@ -98,4 +98,69 @@ body div {
 
 .secondContainer .secondBlock .content {
     background-color: #FEEA85;
+}
+
+/* Tablets (600px - 768px) */
+
+@media (max-width:768px) {
+    .secondContainer {
+        background-color: #FEFF03;
+        flex-wrap: wrap;
+    }
+
+    .secondContainer .firstBlock,
+    .secondContainer .secondBlock {
+        width: 100%;
+    }
+}
+
+/* Mobiles (600px) */
+
+@media (max-width:600px) {
+
+    body div {
+        margin: 5%;
+    }
+
+    .firstBlock {
+        flex-wrap: wrap;
+    }
+
+    .firstBlock .content {
+        width: 100% !important;
+    }
+
+    .secondContainer {
+        background-color: #FEE228;
+    }
+
+    .secondContainer .firstBlock {
+        background-color: #09506F;
+    }
+
+    .secondContainer .firstBlock .content {
+        background-color: #61959C;
+    }
+
+    .secondContainer .firstBlock .content:last-child {
+        background-color: #A3DDCB;
+    }
+
+    .secondContainer .secondBlock {
+        background-color: #FD7B54;
+    }
+
+    .secondContainer .secondBlock .content {
+        background-color: #FDB36B;
+    }
+
+    .thirdContainer .content {
+        background-color: #FDC764;
+    }
+
+    .content {
+        height: 40px;
+        margin: 5%;
+    }
+
 }
