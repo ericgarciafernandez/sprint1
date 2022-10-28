@@ -37,12 +37,21 @@ li {
     align-items: center;
 }
 
+nav ul li {
+    width: 40%;
+    justify-content: center;
+}
+
 li i,
 li h3 {
     margin: 7%;
 }
 
-.imgMenu {
+p{
+    margin: 1%;
+}
+
+.logo {
     width: 50%;
 }
 
@@ -116,4 +125,66 @@ li:hover{
 .moreInfo:hover{
     font-size: 20px;
     cursor: pointer;
+}
+
+
+/* Tablets (600px - 768px) */
+
+@media (max-width:768px) {
+    nav ul{
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 33%;
+    }
+
+    .firstSection {
+        width: 70%;
+    }
+
+    .secondSection {
+        width: 23%;
+    }
+
+    footer{
+        width: 94%;
+    }
+
+    .secondSection article{
+        width: auto;
+    }
+
+}
+
+/* Mobiles (600px) */
+
+@media (max-width:600px) {
+    nav ul li:first-child{
+        display: none;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        width: 33%;
+        margin: 3%;
+    }
+
+    nav ul li:hover{
+        background-color: #F08080;
+    }
+
+    .firstSection article {
+        width: 100%;
+    }
+
+    .firstSection {
+        width: 60%;
+    }
+
+    .secondSection {
+        width: 35%;
+    }
 }
